@@ -4,8 +4,6 @@ WORKDIR /workspace
 COPY pom.xml ./
 COPY libs ./libs
 COPY services ./services
-RUN mvn -q -pl services/order-service -am dependency:go-offline
-
 RUN mvn -q -pl services/order-service -am -DskipTests package
 WORKDIR /workspace/services/order-service
 RUN java -Djarmode=layertools -jar target/*.jar extract --destination target/extracted

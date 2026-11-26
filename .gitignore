@@ -21,3 +21,6 @@
 
 # Docker
 *.pid
+
+# Graphify
+graphify-out/cache/

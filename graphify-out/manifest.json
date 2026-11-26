@@ -1,0 +1,764 @@
+{
+  ".github/workflows/ci.yml": {
+    "mtime": 1795624378.5132158,
+    "seen": 1795659917.1752903,
+    "ast_hash": "b15c4448714f8afd5e800d1b8fed93f4",
+    "semantic_hash": "b15c4448714f8afd5e800d1b8fed93f4"
+  },
+  "dashboard/eslint.config.js": {
+    "mtime": 1794891997.149649,
+    "seen": 1795659917.1752903,
+    "ast_hash": "6cb2be1a633f7b05e61d58f18d9ed061",
+    "semantic_hash": "6cb2be1a633f7b05e61d58f18d9ed061"
+  },
+  "dashboard/package.json": {
+    "mtime": 1794891997.0750782,
+    "seen": 1795659917.1752903,
+    "ast_hash": "ad473f76869b70b10a71ad00563f0058",
+    "semantic_hash": "ad473f76869b70b10a71ad00563f0058"
+  },
+  "dashboard/src/App.tsx": {
+    "mtime": 1795661505.6561017,
+    "seen": 1795662055.4130497,
+    "ast_hash": "aea6851aa099d36f442fa98a82cb4909",
+    "semantic_hash": ""
+  },
+  "dashboard/src/main.tsx": {
+    "mtime": 1794891997.1966958,
+    "seen": 1795659917.1752903,
+    "ast_hash": "7fdb053de6b440696b1be41560fe08e8",
+    "semantic_hash": "7fdb053de6b440696b1be41560fe08e8"
+  },
+  "dashboard/tsconfig.app.json": {
+    "mtime": 1794898251.5825455,
+    "seen": 1795659917.1752903,
+    "ast_hash": "1c479ef8f4418ef19ce84b01b6331709",
+    "semantic_hash": "1c479ef8f4418ef19ce84b01b6331709"
+  },
+  "dashboard/tsconfig.json": {
+    "mtime": 1794891997.0940704,
+    "seen": 1795659917.1752903,
+    "ast_hash": "852c3a5df14a4b43ac28e9554ebedf4a",
+    "semantic_hash": "852c3a5df14a4b43ac28e9554ebedf4a"
+  },
+  "dashboard/tsconfig.node.json": {
+    "mtime": 1794898251.6009612,
+    "seen": 1795659917.1752903,
+    "ast_hash": "fe188637ba6ef08a613a2c417a9ee4c4",
+    "semantic_hash": "fe188637ba6ef08a613a2c417a9ee4c4"
+  },
+  "dashboard/vite.config.ts": {
+    "mtime": 1794891997.1316557,
+    "seen": 1795659917.1752903,
+    "ast_hash": "41bde0081b5ac9a8af85d50b29e2464d",
+    "semantic_hash": "41bde0081b5ac9a8af85d50b29e2464d"
+  },
+  "docker-compose.yml": {
+    "mtime": 1795661473.0735617,
+    "seen": 1795662055.4130497,
+    "ast_hash": "c2e5ba37775c68f14ea7b9c217f18a5b",
+    "semantic_hash": ""
+  },
+  "libs/events/pom.xml": {
+    "mtime": 1794891996.8489203,
+    "seen": 1795659917.1752903,
+    "ast_hash": "ef7da3f47f33581a7a06ad1f49a9cc96",
+    "semantic_hash": "ef7da3f47f33581a7a06ad1f49a9cc96"
+  },
+  "libs/events/src/main/java/com/dropgate/events/AuditEvent.java": {
+    "mtime": 1794891996.8679197,
+    "seen": 1795659917.1752903,
+    "ast_hash": "0c2ffcd7e72b64905501191367c705bf",
+    "semantic_hash": "0c2ffcd7e72b64905501191367c705bf"
+  },
+  "libs/events/src/main/java/com/dropgate/events/ClickEvent.java": {
+    "mtime": 1794891996.8569214,
+    "seen": 1795659917.1752903,
+    "ast_hash": "99582e260f7dbed5b59cfbb6156fcf52",
+    "semantic_hash": "99582e260f7dbed5b59cfbb6156fcf52"
+  },
+  "libs/events/src/main/java/com/dropgate/events/FraudScoreEvent.java": {
+    "mtime": 1794891996.8629203,
+    "seen": 1795659917.1752903,
+    "ast_hash": "3316e8cdf5ef3464833396c669e9f014",
+    "semantic_hash": "3316e8cdf5ef3464833396c669e9f014"
+  },
+  "libs/events/src/main/java/com/dropgate/events/InventoryChangedEvent.java": {
+    "mtime": 1794891996.8679197,
+    "seen": 1795659917.1752903,
+    "ast_hash": "c7e31b2902e0eb435ae5bde5378ded40",
+    "semantic_hash": "c7e31b2902e0eb435ae5bde5378ded40"
+  },
+  "libs/events/src/main/java/com/dropgate/events/OrderEvent.java": {
+    "mtime": 1794891996.8569214,
+    "seen": 1795659917.1752903,
+    "ast_hash": "54e017494e722917470efd55a0dfd18e",
+    "semantic_hash": "54e017494e722917470efd55a0dfd18e"
+  },
+  "pom.xml": {
+    "mtime": 1795649258.718599,
+    "seen": 1795659917.1752903,
+    "ast_hash": "84a347df50ce2b6c64eeb4073eac27ba",
+    "semantic_hash": "84a347df50ce2b6c64eeb4073eac27ba"
+  },
+  "scripts/create-db.sh": {
+    "mtime": 1794891996.8479195,
+    "seen": 1795659917.1752903,
+    "ast_hash": "97cdbf8f00ef75aa1fd49ed11d7569c4",
+    "semantic_hash": "97cdbf8f00ef75aa1fd49ed11d7569c4"
+  },
+  "services/fraud-stream-service/pom.xml": {
+    "mtime": 1795653919.6072824,
+    "seen": 1795659917.1752903,
+    "ast_hash": "dcfdf7249cd8dbf8761d7d68fe36bfdf",
+    "semantic_hash": "dcfdf7249cd8dbf8761d7d68fe36bfdf"
+  },
+  "services/fraud-stream-service/src/main/java/com/dropgate/fraud/FraudScoringService.java": {
+    "mtime": 1795649279.6375215,
+    "seen": 1795659917.1752903,
+    "ast_hash": "3c9eeefb24ff7f77070abedb6748f433",
+    "semantic_hash": "3c9eeefb24ff7f77070abedb6748f433"
+  },
+  "services/fraud-stream-service/src/main/java/com/dropgate/fraud/FraudScoringTopology.java": {
+    "mtime": 1795652932.3140705,
+    "seen": 1795659917.1752903,
+    "ast_hash": "c69df8794e1062e45ad34b3541a49ede",
+    "semantic_hash": "c69df8794e1062e45ad34b3541a49ede"
+  },
+  "services/fraud-stream-service/src/main/java/com/dropgate/fraud/FraudStreamServiceApplication.java": {
+    "mtime": 1794891996.8699224,
+    "seen": 1795659917.1752903,
+    "ast_hash": "1f8d6cf9a1b9d4d185e376579eee92aa",
+    "semantic_hash": "1f8d6cf9a1b9d4d185e376579eee92aa"
+  },
+  "services/fraud-stream-service/src/main/resources/application-local.yml": {
+    "mtime": 1795653952.8282714,
+    "seen": 1795659917.1752903,
+    "ast_hash": "aadd5bee977069847da65de9a0fa2c7b",
+    "semantic_hash": "aadd5bee977069847da65de9a0fa2c7b"
+  },
+  "services/fraud-stream-service/src/main/resources/application.yml": {
+    "mtime": 1795653939.3763962,
+    "seen": 1795659917.1752903,
+    "ast_hash": "5ff79f6429bf38095527223c7718a9ff",
+    "semantic_hash": "5ff79f6429bf38095527223c7718a9ff"
+  },
+  "services/fraud-stream-service/src/test/java/com/dropgate/fraud/FraudScoringTopologyTests.java": {
+    "mtime": 1795650018.2725801,
+    "seen": 1795659917.1752903,
+    "ast_hash": "6f26bd6d140cffec79ec973045abe43f",
+    "semantic_hash": "6f26bd6d140cffec79ec973045abe43f"
+  },
+  "services/fraud-stream-service/src/test/java/com/dropgate/fraud/FraudStreamServiceApplicationTests.java": {
+    "mtime": 1794891996.9536228,
+    "seen": 1795659917.1752903,
+    "ast_hash": "717b9b058cb9dd238167458e9af0a3c2",
+    "semantic_hash": "717b9b058cb9dd238167458e9af0a3c2"
+  },
+  "services/fraud-stream-service/src/test/resources/application-test.yml": {
+    "mtime": 1795652921.5209174,
+    "seen": 1795659917.1752903,
+    "ast_hash": "3ebdaf305714832ceaef7cf124737bcb",
+    "semantic_hash": "3ebdaf305714832ceaef7cf124737bcb"
+  },
+  "services/insights-service/pom.xml": {
+    "mtime": 1795655022.77836,
+    "seen": 1795659917.1752903,
+    "ast_hash": "726163560115723fe4a4fa1fab20758f",
+    "semantic_hash": "726163560115723fe4a4fa1fab20758f"
+  },
+  "services/insights-service/src/main/java/com/dropgate/insights/InsightsServiceApplication.java": {
+    "mtime": 1794891996.8699224,
+    "seen": 1795659917.1752903,
+    "ast_hash": "a7ff64afb0d3b5181d1a22f01ff7568e",
+    "semantic_hash": "a7ff64afb0d3b5181d1a22f01ff7568e"
+  },
+  "services/insights-service/src/main/resources/application-local.yml": {
+    "mtime": 1795653956.1135745,
+    "seen": 1795659917.1752903,
+    "ast_hash": "a56450c5c5af1975f8cef16d6f59638e",
+    "semantic_hash": "a56450c5c5af1975f8cef16d6f59638e"
+  },
+  "services/insights-service/src/main/resources/application.yml": {
+    "mtime": 1795653939.6767552,
+    "seen": 1795659917.1752903,
+    "ast_hash": "fd1a4f4326c396e092694dd94a132818",
+    "semantic_hash": "fd1a4f4326c396e092694dd94a132818"
+  },
+  "services/insights-service/src/test/java/com/dropgate/insights/InsightsServiceApplicationTests.java": {
+    "mtime": 1794891997.0245948,
+    "seen": 1795659917.1752903,
+    "ast_hash": "277b40c467d97e9c39d7aba26ca0b4c8",
+    "semantic_hash": "277b40c467d97e9c39d7aba26ca0b4c8"
+  },
+  "services/insights-service/src/test/resources/application-test.yml": {
+    "mtime": 1794891996.8959608,
+    "seen": 1795659917.1752903,
+    "ast_hash": "24e3ff520df0d5e188543b59a1ac188d",
+    "semantic_hash": "24e3ff520df0d5e188543b59a1ac188d"
+  },
+  "services/order-service/pom.xml": {
+    "mtime": 1795655022.2242143,
+    "seen": 1795659917.1752903,
+    "ast_hash": "66bbd7417a3b4c5eb540f4c25b16765d",
+    "semantic_hash": "66bbd7417a3b4c5eb540f4c25b16765d"
+  },
+  "services/order-service/src/main/java/com/dropgate/order/AllocationDecision.java": {
+    "mtime": 1794898605.5646722,
+    "seen": 1795659917.1752903,
+    "ast_hash": "2b892b493b22a1b7aff32062f52160c4",
+    "semantic_hash": "2b892b493b22a1b7aff32062f52160c4"
+  },
+  "services/order-service/src/main/java/com/dropgate/order/AllocationRequest.java": {
+    "mtime": 1794898605.5626712,
+    "seen": 1795659917.1752903,
+    "ast_hash": "8713faacb440420fc24456c70121cdcb",
+    "semantic_hash": "8713faacb440420fc24456c70121cdcb"
+  },
+  "services/order-service/src/main/java/com/dropgate/order/AllocationService.java": {
+    "mtime": 1794898857.5782342,
+    "seen": 1795659917.1752903,
+    "ast_hash": "6fd73f723ae427115e0e77f55e239f58",
+    "semantic_hash": "6fd73f723ae427115e0e77f55e239f58"
+  },
+  "services/order-service/src/main/java/com/dropgate/order/AllocationStrategy.java": {
+    "mtime": 1794898605.5646722,
+    "seen": 1795659917.1752903,
+    "ast_hash": "622f1120066e702c9be357f162210dff",
+    "semantic_hash": "622f1120066e702c9be357f162210dff"
+  },
+  "services/order-service/src/main/java/com/dropgate/order/AuditConfiguration.java": {
+    "mtime": 1794933860.5416477,
+    "seen": 1795659917.1752903,
+    "ast_hash": "5cf46f28a46019d6b62c784874ee2bc6",
+    "semantic_hash": "5cf46f28a46019d6b62c784874ee2bc6"
+  },
+  "services/order-service/src/main/java/com/dropgate/order/AuditEvent.java": {
+    "mtime": 1794933860.5416477,
+    "seen": 1795659917.1752903,
+    "ast_hash": "ec6e9bbae0a5d4830c28e7e7f1b3c889",
+    "semantic_hash": "ec6e9bbae0a5d4830c28e7e7f1b3c889"
+  },
+  "services/order-service/src/main/java/com/dropgate/order/AuditEventSink.java": {
+    "mtime": 1794933860.5416477,
+    "seen": 1795659917.1752903,
+    "ast_hash": "f7a5dd257877134d69b51e638f2e02c0",
+    "semantic_hash": "f7a5dd257877134d69b51e638f2e02c0"
+  },
+  "services/order-service/src/main/java/com/dropgate/order/Audited.java": {
+    "mtime": 1794933860.5416477,
+    "seen": 1795659917.1752903,
+    "ast_hash": "73f9909c07cd2d1aaed015ec0632f1ad",
+    "semantic_hash": "73f9909c07cd2d1aaed015ec0632f1ad"
+  },
+  "services/order-service/src/main/java/com/dropgate/order/AuditedBeanPostProcessor.java": {
+    "mtime": 1795624670.4257092,
+    "seen": 1795659917.1752903,
+    "ast_hash": "8503bfda2fbcf8259813abe19667a75a",
+    "semantic_hash": "8503bfda2fbcf8259813abe19667a75a"
+  },
+  "services/order-service/src/main/java/com/dropgate/order/CheckoutController.java": {
+    "mtime": 1794930377.0652258,
+    "seen": 1795659917.1752903,
+    "ast_hash": "adb9cf7102bb4fb843b070b08e2d9266",
+    "semantic_hash": "adb9cf7102bb4fb843b070b08e2d9266"
+  },
+  "services/order-service/src/main/java/com/dropgate/order/CheckoutRequest.java": {
+    "mtime": 1794930377.0632248,
+    "seen": 1795659917.1752903,
+    "ast_hash": "cd6a50ce02e840ba895f7f492333ed78",
+    "semantic_hash": "cd6a50ce02e840ba895f7f492333ed78"
+  },
+  "services/order-service/src/main/java/com/dropgate/order/CheckoutResponse.java": {
+    "mtime": 1794930377.0652258,
+    "seen": 1795659917.1752903,
+    "ast_hash": "c2a3251c5a3ac81241bc6504a968e8a4",
+    "semantic_hash": "c2a3251c5a3ac81241bc6504a968e8a4"
+  },
+  "services/order-service/src/main/java/com/dropgate/order/CheckoutService.java": {
+    "mtime": 1795661453.2556648,
+    "seen": 1795662055.4130497,
+    "ast_hash": "3fd8e303e1f4ddaf2affa81a47713997",
+    "semantic_hash": ""
+  },
+  "services/order-service/src/main/java/com/dropgate/order/DefaultPaymentGateway.java": {
+    "mtime": 1794930377.0652258,
+    "seen": 1795659917.1752903,
+    "ast_hash": "a6112bc10668d1d1aedc098b67077937",
+    "semantic_hash": "a6112bc10668d1d1aedc098b67077937"
+  },
+  "services/order-service/src/main/java/com/dropgate/order/DropgateProperties.java": {
+    "mtime": 1794896652.8468692,
+    "seen": 1795659917.1752903,
+    "ast_hash": "9fbc582d55672007bbe94ae53485f143",
+    "semantic_hash": "9fbc582d55672007bbe94ae53485f143"
+  },
+  "services/order-service/src/main/java/com/dropgate/order/FifoAllocationStrategy.java": {
+    "mtime": 1794898605.57567,
+    "seen": 1795659917.1752903,
+    "ast_hash": "89668df641c0ecac06f2ae4b82ae5803",
+    "semantic_hash": "89668df641c0ecac06f2ae4b82ae5803"
+  },
+  "services/order-service/src/main/java/com/dropgate/order/FingerprintContext.java": {
+    "mtime": 1794898857.6171901,
+    "seen": 1795659917.1752903,
+    "ast_hash": "3681aa9518d4d6c53adeb412ad5918a6",
+    "semantic_hash": "3681aa9518d4d6c53adeb412ad5918a6"
+  },
+  "services/order-service/src/main/java/com/dropgate/order/FingerprintContextFilter.java": {
+    "mtime": 1794898857.7382917,
+    "seen": 1795659917.1752903,
+    "ast_hash": "a2aae70dc6a33f7245354fc69bdd2619",
+    "semantic_hash": "a2aae70dc6a33f7245354fc69bdd2619"
+  },
+  "services/order-service/src/main/java/com/dropgate/order/HoldExpiryWorker.java": {
+    "mtime": 1794933860.5416477,
+    "seen": 1795659917.1752903,
+    "ast_hash": "6cc4c9e88e4bd0f2445dcebf1d064f1e",
+    "semantic_hash": "6cc4c9e88e4bd0f2445dcebf1d064f1e"
+  },
+  "services/order-service/src/main/java/com/dropgate/order/InMemoryInventory.java": {
+    "mtime": 1795661430.5450613,
+    "seen": 1795662055.4130497,
+    "ast_hash": "d40f6158be1f12fa5ab30f00cdf9d46e",
+    "semantic_hash": ""
+  },
+  "services/order-service/src/main/java/com/dropgate/order/InventoryController.java": {
+    "mtime": 1794933860.540648,
+    "seen": 1795659917.1752903,
+    "ast_hash": "62a3f260c41678db5f4f9c698522d747",
+    "semantic_hash": "62a3f260c41678db5f4f9c698522d747"
+  },
+  "services/order-service/src/main/java/com/dropgate/order/InventoryHoldRequest.java": {
+    "mtime": 1794896197.882138,
+    "seen": 1795659917.1752903,
+    "ast_hash": "af9a6fbef5dc3e51e9da85e1139cae1d",
+    "semantic_hash": "af9a6fbef5dc3e51e9da85e1139cae1d"
+  },
+  "services/order-service/src/main/java/com/dropgate/order/InventoryHoldResponse.java": {
+    "mtime": 1795661419.8959394,
+    "seen": 1795662055.4130497,
+    "ast_hash": "ae99018b733193941dede753525ed22e",
+    "semantic_hash": ""
+  },
+  "services/order-service/src/main/java/com/dropgate/order/InventoryPort.java": {
+    "mtime": 1795661420.3302872,
+    "seen": 1795662055.4130497,
+    "ast_hash": "efa73e20614a6f187eee6c9362dccf06",
+    "semantic_hash": ""
+  },
+  "services/order-service/src/main/java/com/dropgate/order/InventoryService.java": {
+    "mtime": 1795661441.9058423,
+    "seen": 1795662055.4130497,
+    "ast_hash": "dc1bb8c4e9137b645f4f93a1ded54b67",
+    "semantic_hash": ""
+  },
+  "services/order-service/src/main/java/com/dropgate/order/InventorySnapshot.java": {
+    "mtime": 1794896197.8801377,
+    "seen": 1795659917.1752903,
+    "ast_hash": "71780e7495f3c2ab49596a772c93bfc2",
+    "semantic_hash": "71780e7495f3c2ab49596a772c93bfc2"
+  },
+  "services/order-service/src/main/java/com/dropgate/order/LotteryAllocationStrategy.java": {
+    "mtime": 1794898605.6046686,
+    "seen": 1795659917.1752903,
+    "ast_hash": "680e7f0ee1c3ff1b82ff294e9b0d72aa",
+    "semantic_hash": "680e7f0ee1c3ff1b82ff294e9b0d72aa"
+  },
+  "services/order-service/src/main/java/com/dropgate/order/OrderServiceApplication.java": {
+    "mtime": 1794933860.540648,
+    "seen": 1795659917.1752903,
+    "ast_hash": "5136fa82e1d57bf2ccdfddc454eb770d",
+    "semantic_hash": "5136fa82e1d57bf2ccdfddc454eb770d"
+  },
+  "services/order-service/src/main/java/com/dropgate/order/OutboxEvent.java": {
+    "mtime": 1795654001.269045,
+    "seen": 1795659917.1752903,
+    "ast_hash": "4c86cd7010466ceeae02727d84a44047",
+    "semantic_hash": "4c86cd7010466ceeae02727d84a44047"
+  },
+  "services/order-service/src/main/java/com/dropgate/order/OutboxRelay.java": {
+    "mtime": 1795655837.214939,
+    "seen": 1795659917.1752903,
+    "ast_hash": "f575222a40addbda4682d47c2db499eb",
+    "semantic_hash": "f575222a40addbda4682d47c2db499eb"
+  },
+  "services/order-service/src/main/java/com/dropgate/order/OutboxRepository.java": {
+    "mtime": 1794936096.9194417,
+    "seen": 1795659917.1752903,
+    "ast_hash": "51f3070faca4f301ac1cb60e7b0a3f79",
+    "semantic_hash": "51f3070faca4f301ac1cb60e7b0a3f79"
+  },
+  "services/order-service/src/main/java/com/dropgate/order/PaymentGateway.java": {
+    "mtime": 1794930377.0652258,
+    "seen": 1795659917.1752903,
+    "ast_hash": "0d6c7be2798b584c09d23edafef79818",
+    "semantic_hash": "0d6c7be2798b584c09d23edafef79818"
+  },
+  "services/order-service/src/main/java/com/dropgate/order/RedisInventory.java": {
+    "mtime": 1795661439.0008533,
+    "seen": 1795662055.4130497,
+    "ast_hash": "b6f71d656d381cfb3f7ee73fc9ad92fa",
+    "semantic_hash": ""
+  },
+  "services/order-service/src/main/java/com/dropgate/order/RedisLuaConfig.java": {
+    "mtime": 1795661440.6653612,
+    "seen": 1795662055.4130497,
+    "ast_hash": "c9e024e3b5e742dd2cb0155d855e4146",
+    "semantic_hash": ""
+  },
+  "services/order-service/src/main/java/com/dropgate/order/ResilientPaymentGateway.java": {
+    "mtime": 1795624904.6282492,
+    "seen": 1795659917.1752903,
+    "ast_hash": "aacffa404489af71ff5b91573127362c",
+    "semantic_hash": "aacffa404489af71ff5b91573127362c"
+  },
+  "services/order-service/src/main/java/com/dropgate/order/TieredPriorityAllocationStrategy.java": {
+    "mtime": 1794898857.577236,
+    "seen": 1795659917.1752903,
+    "ast_hash": "bcecef6f4f8dc9405ecafa388fb6a0da",
+    "semantic_hash": "bcecef6f4f8dc9405ecafa388fb6a0da"
+  },
+  "services/order-service/src/main/resources/application-local.yml": {
+    "mtime": 1795653953.2482605,
+    "seen": 1795659917.1752903,
+    "ast_hash": "a56450c5c5af1975f8cef16d6f59638e",
+    "semantic_hash": "a56450c5c5af1975f8cef16d6f59638e"
+  },
+  "services/order-service/src/main/resources/application.yml": {
+    "mtime": 1795655815.263545,
+    "seen": 1795659917.1752903,
+    "ast_hash": "aed005d9e13ea93de6bf4cf2c6028c52",
+    "semantic_hash": "aed005d9e13ea93de6bf4cf2c6028c52"
+  },
+  "services/order-service/src/main/resources/redis/create_hold.lua": {
+    "mtime": 1794930364.8904982,
+    "seen": 1795659917.1752903,
+    "ast_hash": "a2a5f4363afe2c5d73a433533b27c339",
+    "semantic_hash": "a2a5f4363afe2c5d73a433533b27c339"
+  },
+  "services/order-service/src/main/resources/redis/release_hold.lua": {
+    "mtime": 1794930364.8904982,
+    "seen": 1795659917.1752903,
+    "ast_hash": "98653374043f4fd189a49edf9406f0d2",
+    "semantic_hash": "98653374043f4fd189a49edf9406f0d2"
+  },
+  "services/order-service/src/test/java/com/dropgate/order/OrderServiceApplicationTests.java": {
+    "mtime": 1794891996.8889656,
+    "seen": 1795659917.1752903,
+    "ast_hash": "4946f0d2486f84f0abf4dbb977c1dbc3",
+    "semantic_hash": "4946f0d2486f84f0abf4dbb977c1dbc3"
+  },
+  "services/order-service/src/test/java/com/dropgate/order/OrderServiceMvpTests.java": {
+    "mtime": 1795661458.5998638,
+    "seen": 1795662055.4130497,
+    "ast_hash": "4a596707d7be6de97c0a7e3085230fd6",
+    "semantic_hash": ""
+  },
+  "services/order-service/src/test/java/com/dropgate/order/OutboxRelayTests.java": {
+    "mtime": 1795625047.6827805,
+    "seen": 1795659917.1752903,
+    "ast_hash": "00cacef99e6618bf7c24594145cbafdd",
+    "semantic_hash": "00cacef99e6618bf7c24594145cbafdd"
+  },
+  "services/order-service/src/test/java/com/dropgate/order/ResilientPaymentGatewayTests.java": {
+    "mtime": 1794933860.5416477,
+    "seen": 1795659917.1752903,
+    "ast_hash": "25423b854ee621c9d2a7502b12b379de",
+    "semantic_hash": "25423b854ee621c9d2a7502b12b379de"
+  },
+  "services/order-service/src/test/resources/application-test.yml": {
+    "mtime": 1794891996.8909614,
+    "seen": 1795659917.1752903,
+    "ast_hash": "792d97fac4b4f13ea53791f96eed9157",
+    "semantic_hash": "792d97fac4b4f13ea53791f96eed9157"
+  },
+  "services/queue-service/pom.xml": {
+    "mtime": 1795653919.4427543,
+    "seen": 1795659917.1752903,
+    "ast_hash": "202560570cde8418144cfe0120123412",
+    "semantic_hash": "202560570cde8418144cfe0120123412"
+  },
+  "services/queue-service/src/main/java/com/dropgate/queue/AdmissionToken.java": {
+    "mtime": 1795649317.7339873,
+    "seen": 1795659917.1752903,
+    "ast_hash": "ce053e7c059efc675aff85b098586451",
+    "semantic_hash": "ce053e7c059efc675aff85b098586451"
+  },
+  "services/queue-service/src/main/java/com/dropgate/queue/AdmissionTokenService.java": {
+    "mtime": 1794933860.5416477,
+    "seen": 1795659917.1752903,
+    "ast_hash": "fbcb5d2ff257f98573b01815315769d0",
+    "semantic_hash": "fbcb5d2ff257f98573b01815315769d0"
+  },
+  "services/queue-service/src/main/java/com/dropgate/queue/ClickEventPublisher.java": {
+    "mtime": 1795652316.786988,
+    "seen": 1795659917.1752903,
+    "ast_hash": "94d9e43de0f8c74aebd5c3be08a854b3",
+    "semantic_hash": "94d9e43de0f8c74aebd5c3be08a854b3"
+  },
+  "services/queue-service/src/main/java/com/dropgate/queue/DropMetadata.java": {
+    "mtime": 1794935052.3198464,
+    "seen": 1795659917.1752903,
+    "ast_hash": "71d61e153dfc8a2efdd3329c3d7b37bd",
+    "semantic_hash": "71d61e153dfc8a2efdd3329c3d7b37bd"
+  },
+  "services/queue-service/src/main/java/com/dropgate/queue/DropMetadataCacheService.java": {
+    "mtime": 1794935052.3198464,
+    "seen": 1795659917.1752903,
+    "ast_hash": "c8cbac9aa862d6c4033d209aae8171ee",
+    "semantic_hash": "c8cbac9aa862d6c4033d209aae8171ee"
+  },
+  "services/queue-service/src/main/java/com/dropgate/queue/DropViewCount.java": {
+    "mtime": 1794935456.8936508,
+    "seen": 1795659917.1752903,
+    "ast_hash": "829ae021cdccbc119d66914e3001baa1",
+    "semantic_hash": "829ae021cdccbc119d66914e3001baa1"
+  },
+  "services/queue-service/src/main/java/com/dropgate/queue/DropViewCountRepository.java": {
+    "mtime": 1794935460.1213949,
+    "seen": 1795659917.1752903,
+    "ast_hash": "e727d7c36c853f69de2ba7554631e948",
+    "semantic_hash": "e727d7c36c853f69de2ba7554631e948"
+  },
+  "services/queue-service/src/main/java/com/dropgate/queue/FraudScoreConsumer.java": {
+    "mtime": 1794936093.495814,
+    "seen": 1795659917.1752903,
+    "ast_hash": "2be51c3e24fa94e2095a61a2077dc6b1",
+    "semantic_hash": "2be51c3e24fa94e2095a61a2077dc6b1"
+  },
+  "services/queue-service/src/main/java/com/dropgate/queue/FraudScoreEvent.java": {
+    "mtime": 1794935692.1660492,
+    "seen": 1795659917.1752903,
+    "ast_hash": "8ffd3bc599e59ad5e3f47990e6739d16",
+    "semantic_hash": "8ffd3bc599e59ad5e3f47990e6739d16"
+  },
+  "services/queue-service/src/main/java/com/dropgate/queue/HazelcastGridConfiguration.java": {
+    "mtime": 1795650174.1056864,
+    "seen": 1795659917.1752903,
+    "ast_hash": "737cf8db5ec4300b448c0400bd26fcb4",
+    "semantic_hash": "737cf8db5ec4300b448c0400bd26fcb4"
+  },
+  "services/queue-service/src/main/java/com/dropgate/queue/QueueAdmissionRequest.java": {
+    "mtime": 1794935052.3198464,
+    "seen": 1795659917.1752903,
+    "ast_hash": "a2ee6240af3f6b82c2443478c105a81c",
+    "semantic_hash": "a2ee6240af3f6b82c2443478c105a81c"
+  },
+  "services/queue-service/src/main/java/com/dropgate/queue/QueueAdmissionResponse.java": {
+    "mtime": 1794896652.849869,
+    "seen": 1795659917.1752903,
+    "ast_hash": "3e356d2e6eee59e635598ecbbde413da",
+    "semantic_hash": "3e356d2e6eee59e635598ecbbde413da"
+  },
+  "services/queue-service/src/main/java/com/dropgate/queue/QueueAdmissionScheduler.java": {
+    "mtime": 1794933788.6624548,
+    "seen": 1795659917.1752903,
+    "ast_hash": "4b104dc838039ffcd4875c7a3f579ebd",
+    "semantic_hash": "4b104dc838039ffcd4875c7a3f579ebd"
+  },
+  "services/queue-service/src/main/java/com/dropgate/queue/QueueAdmissionService.java": {
+    "mtime": 1795654023.8193808,
+    "seen": 1795659917.1752903,
+    "ast_hash": "190fa3db66978e93ef92e9769091de72",
+    "semantic_hash": "190fa3db66978e93ef92e9769091de72"
+  },
+  "services/queue-service/src/main/java/com/dropgate/queue/QueueController.java": {
+    "mtime": 1794933860.540648,
+    "seen": 1795659917.1752903,
+    "ast_hash": "37252626dfc5064df555e4629fe344b7",
+    "semantic_hash": "37252626dfc5064df555e4629fe344b7"
+  },
+  "services/queue-service/src/main/java/com/dropgate/queue/QueuePositionResponse.java": {
+    "mtime": 1794933788.6614234,
+    "seen": 1795659917.1752903,
+    "ast_hash": "813d9240b1824e0cf830748e4014051d",
+    "semantic_hash": "813d9240b1824e0cf830748e4014051d"
+  },
+  "services/queue-service/src/main/java/com/dropgate/queue/QueueServiceApplication.java": {
+    "mtime": 1794935041.9422612,
+    "seen": 1795659917.1752903,
+    "ast_hash": "30b4b7c217a8e54b72d8563c1f2c44b2",
+    "semantic_hash": "30b4b7c217a8e54b72d8563c1f2c44b2"
+  },
+  "services/queue-service/src/main/java/com/dropgate/queue/RateLimitExceededException.java": {
+    "mtime": 1795654021.760901,
+    "seen": 1795659917.1752903,
+    "ast_hash": "e80548c61f384a4926b3b0f25ce9857a",
+    "semantic_hash": "e80548c61f384a4926b3b0f25ce9857a"
+  },
+  "services/queue-service/src/main/java/com/dropgate/queue/RateLimitProperties.java": {
+    "mtime": 1794935052.3198464,
+    "seen": 1795659917.1752903,
+    "ast_hash": "7ac44e3585822277b3cb79f13d77d13d",
+    "semantic_hash": "7ac44e3585822277b3cb79f13d77d13d"
+  },
+  "services/queue-service/src/main/java/com/dropgate/queue/RateLimitService.java": {
+    "mtime": 1795626389.7353046,
+    "seen": 1795659917.1752903,
+    "ast_hash": "3554a4394238854d7a9ee08ea01c2f2b",
+    "semantic_hash": "3554a4394238854d7a9ee08ea01c2f2b"
+  },
+  "services/queue-service/src/main/java/com/dropgate/queue/ViewCounterService.java": {
+    "mtime": 1795626793.433988,
+    "seen": 1795659917.1752903,
+    "ast_hash": "43d67e2aa0bdcfb699e6daa6c4e49cbe",
+    "semantic_hash": "43d67e2aa0bdcfb699e6daa6c4e49cbe"
+  },
+  "services/queue-service/src/main/resources/application-local.yml": {
+    "mtime": 1795653952.0911753,
+    "seen": 1795659917.1752903,
+    "ast_hash": "aadd5bee977069847da65de9a0fa2c7b",
+    "semantic_hash": "aadd5bee977069847da65de9a0fa2c7b"
+  },
+  "services/queue-service/src/main/resources/application.yml": {
+    "mtime": 1795653939.0685565,
+    "seen": 1795659917.1752903,
+    "ast_hash": "ab97a1c5555fbfdf439d6b7a010f6a3d",
+    "semantic_hash": "ab97a1c5555fbfdf439d6b7a010f6a3d"
+  },
+  "services/queue-service/src/test/java/com/dropgate/queue/FraudScoreHandlingTests.java": {
+    "mtime": 1794935684.6605434,
+    "seen": 1795659917.1752903,
+    "ast_hash": "e058a17ae6a22d0cfff64e85ff14f232",
+    "semantic_hash": "e058a17ae6a22d0cfff64e85ff14f232"
+  },
+  "services/queue-service/src/test/java/com/dropgate/queue/QueueGridSharingTests.java": {
+    "mtime": 1795651095.5137959,
+    "seen": 1795659917.1752903,
+    "ast_hash": "f5b9ed951e0c1c01576fa666454f81c3",
+    "semantic_hash": "f5b9ed951e0c1c01576fa666454f81c3"
+  },
+  "services/queue-service/src/test/java/com/dropgate/queue/QueueServiceApplicationTests.java": {
+    "mtime": 1794891996.8999603,
+    "seen": 1795659917.1752903,
+    "ast_hash": "a3157e18701d7d04c7aeb1d228436930",
+    "semantic_hash": "a3157e18701d7d04c7aeb1d228436930"
+  },
+  "services/queue-service/src/test/java/com/dropgate/queue/QueueServiceMvpTests.java": {
+    "mtime": 1795627037.687471,
+    "seen": 1795659917.1752903,
+    "ast_hash": "4e2efb74f023439176c8ff181f2d9c88",
+    "semantic_hash": "4e2efb74f023439176c8ff181f2d9c88"
+  },
+  "services/queue-service/src/test/java/com/dropgate/queue/QueueServiceTests.java": {
+    "mtime": 1795625999.9452345,
+    "seen": 1795659917.1752903,
+    "ast_hash": "00236d5696dcaf3f63fc7e147119dffd",
+    "semantic_hash": "00236d5696dcaf3f63fc7e147119dffd"
+  },
+  "services/queue-service/src/test/java/com/dropgate/queue/RateLimitAndCacheTests.java": {
+    "mtime": 1794935052.3198464,
+    "seen": 1795659917.1752903,
+    "ast_hash": "4191219c6a64fe4d0c8507fd353bf1da",
+    "semantic_hash": "4191219c6a64fe4d0c8507fd353bf1da"
+  },
+  "services/queue-service/src/test/java/com/dropgate/queue/RateLimitStatusTests.java": {
+    "mtime": 1795654023.340161,
+    "seen": 1795659917.1752903,
+    "ast_hash": "71542f0189a44f2105bb5be0135f39e6",
+    "semantic_hash": "71542f0189a44f2105bb5be0135f39e6"
+  },
+  "services/queue-service/src/test/java/com/dropgate/queue/ViewCounterServiceTests.java": {
+    "mtime": 1794935448.935577,
+    "seen": 1795659917.1752903,
+    "ast_hash": "2a09569d62a26a780a5ad18befe2d3bd",
+    "semantic_hash": "2a09569d62a26a780a5ad18befe2d3bd"
+  },
+  "services/queue-service/src/test/resources/application-test.yml": {
+    "mtime": 1795649351.9878893,
+    "seen": 1795659917.1752903,
+    "ast_hash": "0e2ac89f4748011fb6c9bb824f291b11",
+    "semantic_hash": "0e2ac89f4748011fb6c9bb824f291b11"
+  },
+  "services/order-service/src/main/resources/db/migration/V1__init.sql": {
+    "mtime": 1794898251.6166184,
+    "seen": 1795660013.5278642,
+    "ast_hash": "f6e45d9fe18ac6c81ebcde1180d5dbe9",
+    "semantic_hash": "f6e45d9fe18ac6c81ebcde1180d5dbe9"
+  },
+  "services/order-service/src/main/resources/db/migration/V2__outbox_string_id.sql": {
+    "mtime": 1795653974.5282083,
+    "seen": 1795660013.5278642,
+    "ast_hash": "67ab3b7c39bd00b65e3ba99187fc24dc",
+    "semantic_hash": "67ab3b7c39bd00b65e3ba99187fc24dc"
+  },
+  "services/queue-service/src/main/resources/db/migration/V1__drop_view_counts.sql": {
+    "mtime": 1795653974.762742,
+    "seen": 1795660013.5304585,
+    "ast_hash": "7a1b357d43dd2bab5b4d54aefee9e448",
+    "semantic_hash": "7a1b357d43dd2bab5b4d54aefee9e448"
+  },
+  "scripts/smoke-test.ps1": {
+    "mtime": 1795661515.7110674,
+    "seen": 1795662055.4130497,
+    "ast_hash": "944cf2888e1458ab2dbe89fa136bc9fc",
+    "semantic_hash": ""
+  },
+  "services/order-service/src/main/java/com/dropgate/order/ApiExceptionHandler.java": {
+    "mtime": 1795661885.0659966,
+    "seen": 1795662055.4130497,
+    "ast_hash": "f582185223b2f579a396fe574c0be09f",
+    "semantic_hash": ""
+  },
+  "services/order-service/src/main/resources/redis/confirm_hold.lua": {
+    "mtime": 1795661422.3120785,
+    "seen": 1795662055.4130497,
+    "ast_hash": "190a5d46690c4c873abc69da4b017d2d",
+    "semantic_hash": ""
+  },
+  "ROADMAP.md": {
+    "mtime": 1795624378.650455,
+    "seen": 1795662055.4130497,
+    "ast_hash": "dbe27900d4e8ba6cda718f3deefaa4fe",
+    "semantic_hash": ""
+  },
+  "container-check.log.txt": {
+    "mtime": 1794990218.8573163,
+    "seen": 1795662055.4130497,
+    "ast_hash": "c633f3c08e20c3e150c7096c267d33b0",
+    "semantic_hash": ""
+  },
+  "dashboard/index.html": {
+    "mtime": 1794891997.164646,
+    "seen": 1795662055.4130497,
+    "ast_hash": "580a8e62a771a846db43a1fc4ccb0f43",
+    "semantic_hash": ""
+  },
+  "docs/build-log.md": {
+    "mtime": 1794935052.3208501,
+    "seen": 1795662055.4130497,
+    "ast_hash": "e4280c587d4bfd88bf89f178cf51db56",
+    "semantic_hash": ""
+  },
+  "maven-exit.txt": {
+    "mtime": 1794897316.3974853,
+    "seen": 1795662055.4130497,
+    "ast_hash": "c4ca4238a0b923820dcc509a6f75849b",
+    "semantic_hash": ""
+  },
+  "out.txt": {
+    "mtime": 1794894461.4866467,
+    "seen": 1795662055.4130497,
+    "ast_hash": "6cd112f09773ace6e5d0d4ba2574de25",
+    "semantic_hash": ""
+  },
+  "shellcheck.txt": {
+    "mtime": 1794897279.7187054,
+    "seen": 1795662055.4130497,
+    "ast_hash": "f4377762954bc0f8a9641ce303539e4d",
+    "semantic_hash": ""
+  },
+  "tasks-prompt.md": {
+    "mtime": 1794933688.7966228,
+    "seen": 1795662055.4130497,
+    "ast_hash": "5ff4b1423226f8d31813e36d78e74492",
+    "semantic_hash": ""
+  },
+  "test.txt": {
+    "mtime": 1794900020.3072376,
+    "seen": 1795662055.4130497,
+    "ast_hash": "a9e98d71b1afb64ca08dd5e5be8a39a6",
+    "semantic_hash": ""
+  }
+}

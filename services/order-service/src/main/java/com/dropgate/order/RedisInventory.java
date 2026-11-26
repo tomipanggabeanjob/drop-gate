@@ -16,16 +16,19 @@ public class RedisInventory implements InventoryPort {
     private final RedisTemplate<String, String> redisTemplate;
     private final RedisScript<Long> createHoldScript;
     private final RedisScript<Long> releaseHoldScript;
+    private final RedisScript<Long> confirmHoldScript;
     private final DropgateProperties properties;
 
     public RedisInventory(
             RedisTemplate<String, String> redisTemplate,
             @Qualifier("createHoldScript") RedisScript<Long> createHoldScript,
             @Qualifier("releaseHoldScript") RedisScript<Long> releaseHoldScript,
+            @Qualifier("confirmHoldScript") RedisScript<Long> confirmHoldScript,
             DropgateProperties properties) {
         this.redisTemplate = redisTemplate;
         this.createHoldScript = createHoldScript;
         this.releaseHoldScript = releaseHoldScript;
+        this.confirmHoldScript = confirmHoldScript;
         this.properties = properties;
     }
 
@@ -58,20 +61,42 @@ public class RedisInventory implements InventoryPort {
         if (remaining == -2) {
             throw new IllegalStateException("max holds reached for account " + request.accountId());
         }
-        if (remaining < -1) {
-            throw new IllegalStateException("insufficient stock for drop " + request.dropId());
-        }
         if (remaining < 0) {
             throw new IllegalStateException("insufficient stock for drop " + request.dropId());
         }
 
-        return new InventoryHoldResponse(request.dropId(), request.accountId(), request.quantity(), remaining.intValue());
+        return new InventoryHoldResponse(
+                holdId,
+                request.dropId(),
+                request.accountId(),
+                request.quantity(),
+                remaining.intValue());
     }
 
+    @Override
     public void releaseHold(String dropId, String holdId, int quantity) {
-        Long remaining = redisTemplate.execute(releaseHoldScript, List.of(stockKey(dropId), holdsKey(dropId), accountHoldsKey(dropId)), holdId, String.valueOf(quantity));
+        Long remaining = redisTemplate.execute(
+                releaseHoldScript,
+                List.of(stockKey(dropId), holdsKey(dropId), accountHoldsKey(dropId)),
+                holdId,
+                String.valueOf(quantity));
         if (remaining == null || remaining < 0) {
             throw new IllegalStateException("hold not found for release");
+        }
+    }
+
+    @Override
+    public void confirmHold(String dropId, String holdId, String accountId, int quantity) {
+        Long result = redisTemplate.execute(
+                confirmHoldScript,
+                List.of(holdsKey(dropId), accountHoldsKey(dropId)),
+                holdId,
+                accountId == null ? "" : accountId);
+        if (result == null || result == -1) {
+            throw new IllegalStateException("hold not found: " + holdId);
+        }
+        if (result == -2) {
+            throw new IllegalStateException("hold account mismatch for " + holdId);
         }
     }
 

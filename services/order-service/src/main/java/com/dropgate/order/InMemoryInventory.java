@@ -14,7 +14,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class InMemoryInventory implements InventoryPort {
     private final Map<String, AtomicInteger> stockByDrop = new ConcurrentHashMap<>();
     private final Map<String, AtomicInteger> holdsByAccount = new ConcurrentHashMap<>();
-    private final Map<String, String> holdOwners = new ConcurrentHashMap<>();
+    private final Map<String, HoldRecord> holdsById = new ConcurrentHashMap<>();
     private final DropgateProperties properties;
 
     public InMemoryInventory(DropgateProperties properties) {
@@ -50,8 +50,13 @@ public class InMemoryInventory implements InventoryPort {
             if (accountHolds.compareAndSet(currentHolds, currentHolds + 1)) {
                 if (stock.compareAndSet(currentStock, currentStock - request.quantity())) {
                     String holdId = "hold-" + request.accountId() + "-" + System.nanoTime();
-                    holdOwners.put(holdId, request.accountId());
-                    return new InventoryHoldResponse(request.dropId(), request.accountId(), request.quantity(), currentStock - request.quantity());
+                    holdsById.put(holdId, new HoldRecord(request.dropId(), request.accountId(), request.quantity()));
+                    return new InventoryHoldResponse(
+                            holdId,
+                            request.dropId(),
+                            request.accountId(),
+                            request.quantity(),
+                            currentStock - request.quantity());
                 }
                 accountHolds.decrementAndGet();
             }
@@ -64,15 +69,44 @@ public class InMemoryInventory implements InventoryPort {
             throw new IllegalArgumentException("quantity must be positive");
         }
 
+        HoldRecord hold = holdsById.remove(holdId);
         AtomicInteger stock = stockByDrop.computeIfAbsent(dropId, ignored -> new AtomicInteger(0));
         stock.addAndGet(quantity);
 
-        String owner = holdOwners.remove(holdId);
+        String owner = hold == null ? null : hold.accountId();
         if (owner != null) {
             AtomicInteger accountHolds = holdsByAccount.get(owner);
             if (accountHolds != null) {
                 accountHolds.updateAndGet(current -> Math.max(0, current - 1));
             }
         }
+    }
+
+    @Override
+    public void confirmHold(String dropId, String holdId, String accountId, int quantity) {
+        if (holdId == null || holdId.isBlank()) {
+            throw new IllegalArgumentException("holdId is required");
+        }
+        HoldRecord hold = holdsById.get(holdId);
+        if (hold == null) {
+            throw new IllegalStateException("hold not found: " + holdId);
+        }
+        if (!hold.dropId().equals(dropId)) {
+            throw new IllegalStateException("hold drop mismatch for " + holdId);
+        }
+        if (!hold.accountId().equals(accountId)) {
+            throw new IllegalStateException("hold account mismatch for " + holdId);
+        }
+        if (hold.quantity() != quantity) {
+            throw new IllegalStateException("hold quantity mismatch for " + holdId);
+        }
+        holdsById.remove(holdId);
+        AtomicInteger accountHolds = holdsByAccount.get(accountId);
+        if (accountHolds != null) {
+            accountHolds.updateAndGet(current -> Math.max(0, current - 1));
+        }
+    }
+
+    private record HoldRecord(String dropId, String accountId, int quantity) {
     }
 }

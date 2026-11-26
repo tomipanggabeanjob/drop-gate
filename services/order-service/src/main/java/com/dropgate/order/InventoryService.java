@@ -18,4 +18,8 @@ public class InventoryService {
     public InventoryHoldResponse placeHold(InventoryHoldRequest request) {
         return inventoryPort.placeHold(request);
     }
+
+    public void confirmHold(String dropId, String holdId, String accountId, int quantity) {
+        inventoryPort.confirmHold(dropId, holdId, accountId, quantity);
+    }
 }

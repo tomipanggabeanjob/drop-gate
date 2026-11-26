@@ -134,15 +134,32 @@ class OrderServiceMvpTests {
 
     @Test
     void checkoutUsesIdempotencyKeyAndReplaysSameResponse() throws Exception {
+        String holdRequest = """
+                {
+                  "accountId": "acct-checkout",
+                  "quantity": 1
+                }
+                """;
+
+        String holdResponse = mockMvc.perform(post("/api/drops/drop-42/holds")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(holdRequest))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.holdId").isNotEmpty())
+                .andReturn()
+                .getResponse()
+                .getContentAsString();
+
+        String holdId = objectMapper.readTree(holdResponse).get("holdId").asText();
         String request = """
                 {
                   "dropId": "drop-42",
                   "accountId": "acct-checkout",
-                  "holdId": "hold-100",
+                  "holdId": "%s",
                   "quantity": 1,
                   "totalCents": 2500
                 }
-                """;
+                """.formatted(holdId);
 
         String first = mockMvc.perform(post("/api/checkout")
                         .header("Idempotency-Key", "idem-1")

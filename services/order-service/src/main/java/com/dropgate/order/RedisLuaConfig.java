@@ -25,4 +25,12 @@ public class RedisLuaConfig {
         script.setResultType(Long.class);
         return script;
     }
+
+    @Bean("confirmHoldScript")
+    public RedisScript<Long> confirmHoldScript() {
+        DefaultRedisScript<Long> script = new DefaultRedisScript<>();
+        script.setScriptSource(new ResourceScriptSource(new ClassPathResource("redis/confirm_hold.lua")));
+        script.setResultType(Long.class);
+        return script;
+    }
 }

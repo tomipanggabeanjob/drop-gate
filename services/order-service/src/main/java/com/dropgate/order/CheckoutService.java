@@ -12,11 +12,16 @@ public class CheckoutService {
 
     private final PaymentGateway paymentGateway;
     private final OutboxRepository outboxRepository;
+    private final InventoryService inventoryService;
     private final Map<String, CheckoutResponse> idempotencyStore = new ConcurrentHashMap<>();
 
-    public CheckoutService(PaymentGateway paymentGateway, OutboxRepository outboxRepository) {
+    public CheckoutService(
+            PaymentGateway paymentGateway,
+            OutboxRepository outboxRepository,
+            InventoryService inventoryService) {
         this.paymentGateway = paymentGateway;
         this.outboxRepository = outboxRepository;
+        this.inventoryService = inventoryService;
     }
 
     public CheckoutResponse checkout(String idempotencyKey, CheckoutRequest request) {
@@ -31,9 +36,18 @@ public class CheckoutService {
             if (request.quantity() <= 0) {
                 throw new IllegalArgumentException("quantity must be positive");
             }
+            if (request.holdId() == null || request.holdId().isBlank()) {
+                throw new IllegalArgumentException("holdId is required");
+            }
             if (!paymentGateway.authorize(request.accountId(), request.totalCents())) {
                 throw new IllegalStateException("payment authorization failed");
             }
+
+            inventoryService.confirmHold(
+                    request.dropId(),
+                    request.holdId(),
+                    request.accountId(),
+                    request.quantity());
 
             String orderId = UUID.randomUUID().toString();
             CheckoutResponse response = new CheckoutResponse(

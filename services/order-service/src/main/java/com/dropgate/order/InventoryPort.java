@@ -6,4 +6,6 @@ public interface InventoryPort {
     InventoryHoldResponse placeHold(InventoryHoldRequest request);
 
     void releaseHold(String dropId, String holdId, int quantity);
+
+    void confirmHold(String dropId, String holdId, String accountId, int quantity);
 }
