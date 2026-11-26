@@ -1,0 +1,23 @@
+# OS/editor
+.DS_Store
+.idea/
+.vscode/
+*.iml
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Build outputs
+**/target/
+**/dist/
+**/node_modules/
+**/coverage/
+**/.vite/
+
+# Logs
+*.log
+
+# Docker
+*.pid

@@ -1,0 +1,13 @@
+spring:
+  data:
+    redis:
+      host: localhost
+  datasource:
+    url: jdbc:postgresql://localhost:5432/dropgate
+    username: ${PG_USER:postgres}
+    password: ${PG_PASSWORD:postgres}
+    driver-class-name: org.postgresql.Driver
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+    connect-retries: 20
