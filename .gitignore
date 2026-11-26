@@ -2,6 +2,8 @@
 .DS_Store
 .idea/
 .vscode/
+.cursor/
+.agents/
 *.iml
 
 # Environment and secrets
@@ -23,4 +25,5 @@
 *.pid
 
 # Graphify
-graphify-out/cache/
+graphify-out/
+.graphify/
