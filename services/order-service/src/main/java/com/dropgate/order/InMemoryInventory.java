@@ -12,6 +12,9 @@ import java.util.concurrent.atomic.AtomicInteger;
 @Primary
 @ConditionalOnProperty(name = "dropgate.inventory", havingValue = "memory", matchIfMissing = true)
 public class InMemoryInventory implements InventoryPort {
+    static final String SEEDED_DROP_ID = "drop-42";
+    static final int SEEDED_AVAILABLE = 10;
+
     private final Map<String, AtomicInteger> stockByDrop = new ConcurrentHashMap<>();
     private final Map<String, AtomicInteger> holdsByAccount = new ConcurrentHashMap<>();
     private final Map<String, HoldRecord> holdsById = new ConcurrentHashMap<>();
@@ -19,7 +22,18 @@ public class InMemoryInventory implements InventoryPort {
 
     public InMemoryInventory(DropgateProperties properties) {
         this.properties = properties;
-        stockByDrop.put("drop-42", new AtomicInteger(10));
+        reset();
+    }
+
+    /**
+     * Restores seeded stock and clears holds. Spring MVC tests share one bean,
+     * so each case resets before it runs and does not depend on test order.
+     */
+    void reset() {
+        stockByDrop.clear();
+        holdsByAccount.clear();
+        holdsById.clear();
+        stockByDrop.put(SEEDED_DROP_ID, new AtomicInteger(SEEDED_AVAILABLE));
     }
 
     @Override

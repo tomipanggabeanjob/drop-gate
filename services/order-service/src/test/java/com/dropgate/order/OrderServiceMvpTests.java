@@ -1,6 +1,7 @@
 package com.dropgate.order;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -43,6 +44,14 @@ class OrderServiceMvpTests {
 
     @Autowired
     private AllocationService allocationService;
+
+    @Autowired
+    private InMemoryInventory inventory;
+
+    @BeforeEach
+    void resetSharedInventory() {
+        inventory.reset();
+    }
 
     @Test
     void inventoryIsAvailableAndCanBeHeld() throws Exception {
